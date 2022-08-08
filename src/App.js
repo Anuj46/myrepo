@@ -4,23 +4,19 @@ import data from './data';
 import './App.css';
 
 function App() {
-   const CardCOmp = data.map ( (card) => {
-    return <Card key = {card.id}
-                 item = {card}
-                   />
-   })
+  const CardCOmp = data.map((card) => {
+    return <Card key={card.id} item={card} />;
+  });
 
-   function add () {
-    console.log("add")
-   }
+  function add() {
+    console.log('add');
+  }
   return (
     <div className="App">
       <UpperContainer />
-      <section className='card-list'>
-      {CardCOmp}
-      </section>
-      <button onClick={add} > sanf</button>
-  
+      <section className="card-list">{CardCOmp}</section>
+      <button onClick={add}> sanf</button>
+      console.log("glhk")
     </div>
   );
 }
